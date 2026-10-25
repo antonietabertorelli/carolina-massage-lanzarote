@@ -8,77 +8,413 @@
 <link rel="canonical" href="https://carolinamassagelanzarote.com/">
 <link rel="alternate" hreflang="en" href="https://carolinamassagelanzarote.com/">
 <link rel="alternate" hreflang="es" href="https://carolinamassagelanzarote.com/es.html">
+<link rel="alternate" hreflang="x-default" href="https://carolinamassagelanzarote.com/">
 <meta property="og:title" content="Private Massage in Lanzarote | Carolina Massage Lanzarote">
 <meta property="og:description" content="Private massage experiences in Lanzarote. Volcanic hot stone, relaxing and therapeutic massage. Studio appointments and mobile massage for hotels, villas and holiday apartments.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://carolinamassagelanzarote.com/">
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600&display=swap');
+
 :root{
-  --ink:#1c1a17;--stone:#514a42;--sand:#e8dfd2;--paper:#f7f3ed;--cream:#fffdf9;--line:rgba(28,26,23,.14)
+  --ink:#171512;
+  --charcoal:#23201c;
+  --stone:#6f685f;
+  --taupe:#b6a99b;
+  --sand:#e9dfd2;
+  --ivory:#f7f3ed;
+  --paper:#fbf8f3;
+  --sage:#7b806f;
+  --white:#ffffff;
+  --line:rgba(23,21,18,.14);
+  --max:1180px;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.55}
-a{color:inherit}
-.wrap{width:min(1180px,calc(100% - 40px));margin:auto}
-header{position:sticky;top:0;z-index:20;background:rgba(247,243,237,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-.brand{font-family:Georgia,serif;text-decoration:none;font-size:1.15rem}
-.navlinks{display:flex;gap:18px;align-items:center;font-size:.9rem}
-.navlinks a{text-decoration:none}
-.pill{border:1px solid var(--ink);padding:10px 16px;border-radius:999px}
-.hero{min-height:86vh;display:flex;align-items:center;padding:76px 0}
-.eyebrow{font-size:.72rem;letter-spacing:.18em;font-weight:700;color:var(--stone);margin-bottom:18px}
-h1,h2,h3{font-family:Georgia,'Times New Roman',serif;font-weight:400;line-height:1.05;margin:0}
-h1{font-size:clamp(3.2rem,8vw,7.4rem);max-width:980px}
-h2{font-size:clamp(2.4rem,5vw,4.8rem)}
-.lead{font-size:clamp(1.05rem,2vw,1.35rem);max-width:720px;color:var(--stone);margin-top:26px}
-.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
-.btn{display:inline-flex;padding:14px 20px;border-radius:999px;border:1px solid var(--ink);text-decoration:none;font-weight:700}
-.btn.primary{background:var(--ink);color:#fff}
-.note{margin-top:18px;color:var(--stone);font-size:.88rem}
-.trust{background:var(--cream);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.trustgrid{display:grid;grid-template-columns:repeat(4,1fr)}
-.trustgrid div{padding:20px;text-align:center;border-right:1px solid var(--line);font-size:.88rem}
-.trustgrid div:last-child{border-right:0}
-.section{padding:100px 0}
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
-.panel{min-height:520px;background:linear-gradient(145deg,#211f1d,#7b7064 55%,#1e1c1a);position:relative;overflow:hidden}
-.panel:before,.panel:after{content:"";position:absolute;border-radius:50%;background:#0e0d0c;box-shadow:inset -16px -16px 36px rgba(255,255,255,.06)}
-.panel:before{width:220px;height:220px;left:16%;top:20%}
-.panel:after{width:150px;height:150px;right:14%;bottom:15%}
-.copy p{color:var(--stone);margin-top:22px}
-.duration{display:inline-block;margin-top:18px;border-bottom:1px solid var(--ink)}
-.cards{display:grid;grid-template-columns:repeat(2,1fr);margin-top:40px;border-top:1px solid var(--line)}
-.card{padding:28px 28px 30px 0;border-bottom:1px solid var(--line)}
-.card:nth-child(odd){border-right:1px solid var(--line)}
-.card:nth-child(even){padding-left:28px}
-.card h3{font-size:1.9rem}
-.card p{color:var(--stone);margin-top:12px}
-.dark{background:var(--ink);color:var(--cream)}
-.dark .eyebrow,.dark p{color:#d7d0c7}
-.dark .btn{border-color:var(--cream);color:var(--cream)}
-.closing{background:var(--sand);text-align:center}
-.closing p{max-width:680px;margin:22px auto 0;color:var(--stone)}
-.closing .actions{justify-content:center}
-footer{padding:30px 0;background:var(--cream);border-top:1px solid var(--line)}
-.footer{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:24px;font-size:.88rem}
-.wa{position:fixed;right:18px;bottom:18px;background:var(--ink);color:white;padding:13px 18px;border-radius:999px;text-decoration:none;font-weight:700;z-index:30}
-@media(max-width:850px){
- .grid2,.footer{grid-template-columns:1fr}
- .trustgrid{grid-template-columns:1fr 1fr}
- .cards{grid-template-columns:1fr}
- .card,.card:nth-child(odd),.card:nth-child(even){border-right:0;padding:24px 0}
- .navlinks a:not(.pill):not(.lang){display:none}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:'Manrope',Arial,sans-serif;
+  line-height:1.55;
 }
-@media(max-width:560px){
- .wrap{width:min(1180px,calc(100% - 28px))}
- .hero{min-height:auto;padding:80px 0}
- h1{font-size:3.2rem}
- .trustgrid{grid-template-columns:1fr}
- .actions{flex-direction:column}
- .btn{justify-content:center}
- .wa{left:14px;right:14px;text-align:center}
+a{color:inherit}
+img{display:block;max-width:100%}
+.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+.serif{font-family:'Cormorant Garamond',Georgia,serif}
+
+header{
+  position:sticky;
+  top:0;
+  z-index:50;
+  backdrop-filter:blur(14px);
+  background:rgba(251,248,243,.88);
+  border-bottom:1px solid rgba(23,21,18,.08);
+}
+.nav{
+  min-height:74px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:28px;
+}
+.brand{
+  text-decoration:none;
+  font-family:'Cormorant Garamond',Georgia,serif;
+  font-weight:600;
+  font-size:1.35rem;
+  letter-spacing:.01em;
+}
+.navlinks{
+  display:flex;
+  align-items:center;
+  gap:22px;
+  font-size:.84rem;
+}
+.navlinks a{text-decoration:none}
+.nav-cta{
+  border:1px solid var(--ink);
+  padding:11px 17px;
+  border-radius:999px;
+  font-weight:600;
+}
+.lang{
+  font-weight:600;
+  letter-spacing:.08em;
+}
+
+.hero{
+  min-height:calc(100vh - 74px);
+  display:grid;
+  grid-template-columns:minmax(0,1.1fr) minmax(360px,.9fr);
+  align-items:stretch;
+  background:var(--ivory);
+}
+.hero-copy{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:84px max(40px,calc((100vw - var(--max))/2)) 72px;
+  padding-right:54px;
+}
+.eyebrow{
+  font-size:.72rem;
+  letter-spacing:.19em;
+  font-weight:600;
+  color:var(--stone);
+  text-transform:uppercase;
+  margin-bottom:18px;
+}
+h1,h2,h3{
+  font-family:'Cormorant Garamond',Georgia,serif;
+  font-weight:500;
+  line-height:.98;
+  margin:0;
+}
+h1{font-size:clamp(4rem,7.8vw,7.4rem);max-width:860px}
+h2{font-size:clamp(2.7rem,5vw,4.8rem)}
+h3{font-size:2rem}
+.hero-lead{
+  max-width:660px;
+  font-size:1.08rem;
+  color:var(--stone);
+  margin-top:28px;
+}
+.hero-actions{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:32px;
+}
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  text-decoration:none;
+  border-radius:999px;
+  padding:14px 20px;
+  border:1px solid var(--ink);
+  font-size:.9rem;
+  font-weight:600;
+}
+.btn.primary{background:var(--ink);color:var(--white)}
+.btn.ghost{background:transparent}
+.hero-note{
+  margin-top:20px;
+  color:var(--stone);
+  font-size:.83rem;
+}
+.hero-visual{
+  position:relative;
+  overflow:hidden;
+  min-height:680px;
+  background:
+    linear-gradient(180deg,rgba(23,21,18,.08),rgba(23,21,18,.18)),
+    radial-gradient(circle at 34% 28%, rgba(255,255,255,.3), transparent 16%),
+    linear-gradient(150deg,#9f8d7b,#4d443b 55%,#1a1816);
+}
+.hero-visual::before{
+  content:"";
+  position:absolute;
+  inset:10% 13%;
+  border-radius:48% 52% 47% 53% / 58% 42% 58% 42%;
+  background:
+    radial-gradient(circle at 42% 35%,rgba(255,255,255,.22),transparent 16%),
+    linear-gradient(145deg,#1a1816,#5d5248 50%,#181614);
+  box-shadow:
+    0 50px 80px rgba(0,0,0,.25),
+    inset -30px -20px 60px rgba(255,255,255,.04);
+}
+.hero-visual::after{
+  content:"VOLCANIC CALM";
+  position:absolute;
+  left:28px;
+  bottom:28px;
+  color:rgba(255,255,255,.75);
+  letter-spacing:.18em;
+  font-size:.7rem;
+}
+
+.trust-strip{
+  background:var(--paper);
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+.trust-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+}
+.trust-item{
+  padding:22px 20px;
+  text-align:center;
+  font-size:.84rem;
+  border-right:1px solid var(--line);
+}
+.trust-item:last-child{border-right:0}
+
+.section{padding:110px 0}
+.split{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:72px;
+  align-items:center;
+}
+.image-block{
+  position:relative;
+  min-height:580px;
+  overflow:hidden;
+  background:
+    linear-gradient(180deg,rgba(255,255,255,.02),rgba(0,0,0,.2)),
+    linear-gradient(150deg,#453d36,#8d7d6d 46%,#211e1a);
+}
+.image-block.hotstones::before,
+.image-block.carolina::before,
+.image-block.mobile::before{
+  content:"";
+  position:absolute;
+  border-radius:50%;
+  background:#171512;
+  box-shadow:inset -18px -18px 42px rgba(255,255,255,.06),0 30px 60px rgba(0,0,0,.28);
+}
+.image-block.hotstones::before{width:220px;height:220px;left:18%;top:17%}
+.image-block.hotstones::after{
+  content:"";
+  position:absolute;
+  width:155px;height:155px;border-radius:50%;
+  background:#0d0c0b;right:15%;bottom:14%;
+  box-shadow:inset -12px -12px 30px rgba(255,255,255,.05);
+}
+.image-block.carolina{
+  background:linear-gradient(145deg,#c5b3a1,#786d62);
+}
+.image-block.carolina::before{
+  width:230px;height:300px;
+  border-radius:47% 47% 42% 42%;
+  left:50%;top:18%;
+  transform:translateX(-50%);
+  background:linear-gradient(#3b342e,#1a1816);
+}
+.image-block.carolina::after{
+  content:"CAROLINA";
+  position:absolute;
+  left:28px;bottom:28px;
+  color:rgba(255,255,255,.8);
+  font-size:.7rem;
+  letter-spacing:.2em;
+}
+.image-block.mobile{
+  background:linear-gradient(145deg,#d4c8ba,#8b7b6c 55%,#5a4f46);
+}
+.image-block.mobile::before{
+  width:360px;height:190px;
+  border-radius:18px;
+  left:50%;top:50%;
+  transform:translate(-50%,-50%);
+  background:linear-gradient(#f7f3ed,#ddd2c5);
+  box-shadow:0 28px 65px rgba(0,0,0,.2);
+}
+.copy .eyebrow{margin-bottom:16px}
+.copy p{
+  margin-top:22px;
+  color:var(--stone);
+  max-width:560px;
+  font-size:1.02rem;
+}
+.meta-line{
+  display:inline-flex;
+  gap:12px;
+  align-items:center;
+  margin-top:24px;
+  padding-top:10px;
+  border-top:1px solid var(--ink);
+  font-size:.78rem;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+.services-intro{max-width:760px;margin-bottom:52px}
+.services-intro p{margin-top:20px;color:var(--stone);max-width:660px}
+.services-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  border-top:1px solid var(--line);
+}
+.service-card{
+  padding:34px 34px 38px 0;
+  border-bottom:1px solid var(--line);
+}
+.service-card:nth-child(odd){border-right:1px solid var(--line)}
+.service-card:nth-child(even){padding-left:34px}
+.service-card h3{margin-bottom:10px}
+.service-card .duration{
+  font-size:.72rem;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--sage);
+  margin-bottom:14px;
+}
+.service-card p{margin:0;color:var(--stone);max-width:480px}
+
+.dark{
+  background:var(--charcoal);
+  color:var(--ivory);
+}
+.dark .eyebrow{color:var(--sand)}
+.dark p{color:#d9d0c7}
+.dark .btn{border-color:var(--ivory);color:var(--ivory)}
+.dark .btn.primary{background:var(--ivory);color:var(--ink)}
+.mobile-list{
+  list-style:none;
+  margin:30px 0 0;
+  padding:0;
+  border-top:1px solid rgba(255,255,255,.17);
+}
+.mobile-list li{
+  padding:16px 0;
+  border-bottom:1px solid rgba(255,255,255,.17);
+  font-family:'Cormorant Garamond',Georgia,serif;
+  font-size:1.55rem;
+}
+
+.why{
+  background:var(--sand);
+}
+.why-grid{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:80px;
+}
+.why-list{
+  border-top:1px solid rgba(23,21,18,.22);
+}
+.why-item{
+  display:grid;
+  grid-template-columns:60px 1fr;
+  gap:18px;
+  padding:22px 0;
+  border-bottom:1px solid rgba(23,21,18,.22);
+}
+.why-num{
+  font-family:'Cormorant Garamond',Georgia,serif;
+  font-size:1.8rem;
+}
+.why-item strong{display:block;margin-bottom:5px}
+.why-item span{color:var(--stone);font-size:.92rem}
+
+.closing{
+  text-align:center;
+  background:var(--paper);
+}
+.closing .wrap{max-width:850px}
+.closing p{
+  max-width:640px;
+  margin:24px auto 0;
+  color:var(--stone);
+}
+.closing .hero-actions{justify-content:center}
+
+footer{
+  background:var(--ivory);
+  border-top:1px solid var(--line);
+  padding:34px 0 92px;
+}
+.footer-grid{
+  display:grid;
+  grid-template-columns:1.2fr 1fr 1fr;
+  gap:28px;
+  font-size:.84rem;
+}
+.footer-grid strong{display:block;margin-bottom:6px}
+
+.wa-float{
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  z-index:60;
+  background:var(--ink);
+  color:white;
+  text-decoration:none;
+  border-radius:999px;
+  padding:13px 18px;
+  font-weight:600;
+  font-size:.85rem;
+  box-shadow:0 14px 34px rgba(0,0,0,.2);
+}
+
+@media(max-width:960px){
+  .hero{grid-template-columns:1fr}
+  .hero-copy{padding:76px 24px 58px}
+  .hero-visual{min-height:440px}
+  .split,.why-grid{grid-template-columns:1fr;gap:42px}
+  .trust-grid{grid-template-columns:1fr 1fr}
+  .trust-item:nth-child(2){border-right:0}
+  .trust-item:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .section{padding:82px 0}
+}
+@media(max-width:620px){
+  .wrap{width:min(var(--max),calc(100% - 28px))}
+  .nav{min-height:68px}
+  .brand{font-size:1.12rem}
+  .navlinks a:not(.nav-cta):not(.lang){display:none}
+  h1{font-size:3.55rem}
+  h2{font-size:2.75rem}
+  .hero-copy{padding-top:70px}
+  .trust-grid{grid-template-columns:1fr}
+  .trust-item{border-right:0!important;border-bottom:1px solid var(--line)!important}
+  .trust-item:last-child{border-bottom:0!important}
+  .services-grid{grid-template-columns:1fr}
+  .service-card,
+  .service-card:nth-child(odd),
+  .service-card:nth-child(even){
+    border-right:0;
+    padding:28px 0;
+  }
+  .footer-grid{grid-template-columns:1fr}
+  .hero-actions{flex-direction:column}
+  .btn{width:100%}
+  .wa-float{left:14px;right:14px;text-align:center}
 }
 </style>
 
@@ -87,16 +423,138 @@ footer{padding:30px 0;background:var(--cream);border-top:1px solid var(--line)}
 </script>
 </head>
 <body>
-<header><div class="wrap nav"><a class="brand" href="index.html">Carolina Massage Lanzarote</a><nav class="navlinks"><a href="#treatments">Treatments</a><a href="#mobile">Mobile Massage</a><a href="#about">About</a><a class="lang" href="es.html">ES</a><a class="pill" href="https://wa.me/34618526413?text=Hello%20Carolina%2C%20I%E2%80%99m%20visiting%20Lanzarote%20and%20I%20would%20like%20to%20book%20a%20massage.%20I%E2%80%99m%20staying%20in..." target="_blank">Book</a></nav></div></header>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">Carolina Massage Lanzarote</a>
+    <nav class="navlinks">
+      <a href="#treatments">Treatments</a>
+      <a href="#mobile">Mobile massage</a>
+      <a href="#about">Carolina</a>
+      <a class="lang" href="es.html">ES</a>
+      <a class="nav-cta" href="https://wa.me/34618526413?text=Hello%20Carolina%2C%20I%E2%80%99m%20visiting%20Lanzarote%20and%20I%20would%20like%20to%20book%20a%20massage.%20I%E2%80%99m%20staying%20in..." target="_blank">Book</a>
+    </nav>
+  </div>
+</header>
+
 <main>
-<section class="hero"><div class="wrap"><div class="eyebrow">PRIVATE WELLNESS IN LANZAROTE</div><h1>Your time in Lanzarote should feel this good.</h1><p class="lead">Personalised massage experiences created for travellers who value privacy, calm and exceptional care.</p><div class="actions"><a class="btn primary" href="https://wa.me/34618526413?text=Hello%20Carolina%2C%20I%E2%80%99m%20visiting%20Lanzarote%20and%20I%20would%20like%20to%20book%20a%20massage.%20I%E2%80%99m%20staying%20in..." target="_blank">Check availability</a><a class="btn" href="#treatments">Explore treatments</a></div><div class="note">Private studio in Arrecife · Mobile service for hotels, villas and holiday apartments</div></div></section>
-<section class="trust"><div class="wrap trustgrid"><div>Personalised care</div><div>Private appointments</div><div>Mobile service</div><div>Direct WhatsApp booking</div></div></section>
-<section class="section"><div class="wrap grid2"><div class="panel"></div><div class="copy"><div class="eyebrow">SIGNATURE EXPERIENCE</div><h2>Volcanic Hot Stone Massage</h2><span class="duration">75 minutes</span><p>A deeply restorative ritual combining personalised manual massage with the enveloping warmth of volcanic hot stones. The experience closes with a gentle facial and scalp massage.</p><div class="actions"><a class="btn primary" href="https://wa.me/34618526413?text=Hello%20Carolina%2C%20I%E2%80%99m%20visiting%20Lanzarote%20and%20I%20would%20like%20to%20book%20a%20massage.%20I%E2%80%99m%20staying%20in..." target="_blank">Book</a></div></div></div></section>
-<section id="treatments" class="section"><div class="wrap"><div class="eyebrow">TREATMENTS</div><h2>Choose how you want to feel.</h2><p class="lead">Each session is adapted to how your body feels that day. If you are unsure which treatment to choose, Carolina will guide you.</p><div class="cards"><article class="card"><h3>Relaxing Massage</h3><div class=duration>60 min</div><p>Slow, calming work designed to release everyday tension and invite the body to fully switch off.</p></article><article class="card"><h3>Therapeutic Massage</h3><p>More focused attention for areas of accumulated muscular tension and physical overload.</p></article><article class="card"><h3>Neck & Shoulder Massage</h3><p>Targeted care for the areas where travel, screens and daily stress tend to settle.</p></article><article class="card"><h3>Back Massage</h3><p>Focused work designed to restore a greater sense of ease, mobility and comfort.</p></article></div></div></section>
-<section id="mobile" class="section dark"><div class="wrap grid2"><div><div class="eyebrow">MOBILE MASSAGE</div><h2>Your massage. Your space.</h2><p class="lead">Staying in a hotel, private villa or holiday apartment? Carolina can bring the experience to you, so your day stays uninterrupted and the relaxation starts exactly where you are.</p><div class="actions"><a class="btn" href="https://wa.me/34618526413?text=Hello%20Carolina%2C%20I%E2%80%99m%20visiting%20Lanzarote%20and%20I%20would%20like%20to%20book%20a%20massage.%20I%E2%80%99m%20staying%20in..." target="_blank">Book</a></div></div><div class="panel"></div></div></section>
-<section id="about" class="section"><div class="wrap grid2"><div class="panel"></div><div class="copy"><div class="eyebrow">MEET CAROLINA</div><h2>Personal care makes the difference.</h2><p>Every session begins by listening. Carolina adapts the massage to how you feel, the areas that need attention and the experience you are looking for — creating a calm, private and unhurried space to disconnect.</p></div></div></section>
-<section class="section closing"><div class="wrap"><div class="eyebrow">YOUR TIME, YOUR BODY</div><h2>Make space for yourself.</h2><p>Tell Carolina where you are staying and what kind of massage you are looking for. She will personally help you choose the right experience.</p><div class="actions"><a class="btn primary" href="https://wa.me/34618526413?text=Hello%20Carolina%2C%20I%E2%80%99m%20visiting%20Lanzarote%20and%20I%20would%20like%20to%20book%20a%20massage.%20I%E2%80%99m%20staying%20in..." target="_blank">Book</a></div></div></section>
+  <section class="hero">
+    <div class="hero-copy">
+      <div class="eyebrow">PRIVATE WELLNESS IN LANZAROTE</div>
+      <h1>A private moment of calm, in the middle of your Lanzarote stay.</h1>
+      <p class="hero-lead">Personalised massage experiences for travellers who value privacy, comfort and thoughtful care.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="https://wa.me/34618526413?text=Hello%20Carolina%2C%20I%E2%80%99m%20visiting%20Lanzarote%20and%20I%20would%20like%20to%20book%20a%20massage.%20I%E2%80%99m%20staying%20in..." target="_blank">Check availability</a>
+        <a class="btn ghost" href="#treatments">Explore treatments</a>
+      </div>
+      <div class="hero-note">Private studio in Arrecife · Mobile service for hotels, villas and holiday apartments</div>
+    </div>
+    <div class="hero-visual" aria-label="Volcanic wellness visual"></div>
+  </section>
+
+  <section class="trust-strip">
+    <div class="wrap trust-grid"><div class="trust-item">Personalised care</div><div class="trust-item">Private appointments</div><div class="trust-item">Mobile service</div><div class="trust-item">Direct WhatsApp booking</div></div>
+  </section>
+
+  <section class="section">
+    <div class="wrap split">
+      <div class="image-block hotstones" aria-label="Volcanic Hot Stone Massage"></div>
+      <div class="copy">
+        <div class="eyebrow">SIGNATURE EXPERIENCE</div>
+        <h2>Volcanic Hot Stone Massage</h2>
+        <div class="meta-line">75 minutes</div>
+        <p>Personalised manual massage combined with the enveloping warmth of volcanic hot stones. The treatment closes with a gentle facial and scalp massage for a complete, deeply calming experience.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="https://wa.me/34618526413?text=Hello%20Carolina%2C%20I%E2%80%99m%20visiting%20Lanzarote%20and%20I%20would%20like%20to%20book%20a%20massage.%20I%E2%80%99m%20staying%20in..." target="_blank">Book this experience</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="treatments" class="section">
+    <div class="wrap">
+      <div class="services-intro">
+        <div class="eyebrow">TREATMENTS</div>
+        <h2>Choose how you want to feel.</h2>
+        <p>Every session is adapted to what your body needs that day. If you are unsure what to choose, Carolina can guide you.</p>
+      </div>
+      <div class="services-grid"><article class="service-card">
+          <h3>Relaxing Massage</h3>
+          <div class="duration">60 min</div>
+          <p>Slow, calming work designed to release everyday tension and invite the body to fully switch off.</p>
+        </article><article class="service-card">
+          <h3>Therapeutic Massage</h3>
+          
+          <p>More focused attention for areas of accumulated muscular tension and physical overload.</p>
+        </article><article class="service-card">
+          <h3>Neck &amp; Shoulder Massage</h3>
+          
+          <p>Targeted care for the areas where travel, screens and daily stress tend to settle.</p>
+        </article><article class="service-card">
+          <h3>Back Massage</h3>
+          
+          <p>Focused work designed to restore a greater sense of ease, mobility and comfort.</p>
+        </article></div>
+    </div>
+  </section>
+
+  <section id="mobile" class="section dark">
+    <div class="wrap split">
+      <div class="copy">
+        <div class="eyebrow">MOBILE MASSAGE</div>
+        <h2>Your massage. Your space.</h2>
+        <p>Staying in a hotel, private villa or holiday apartment? Carolina brings the experience to you, so your day remains uninterrupted and the relaxation starts exactly where you are.</p>
+        <ul class="mobile-list"><li>Hotels</li><li>Private villas</li><li>Holiday apartments</li></ul>
+        <div class="hero-actions">
+          <a class="btn" href="https://wa.me/34618526413?text=Hello%20Carolina%2C%20I%E2%80%99m%20visiting%20Lanzarote%20and%20I%20would%20like%20to%20book%20a%20massage.%20I%E2%80%99m%20staying%20in..." target="_blank">Ask about mobile massage</a>
+        </div>
+      </div>
+      <div class="image-block mobile" aria-label="Your massage. Your space."></div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="wrap split">
+      <div class="image-block carolina" aria-label="Carolina"></div>
+      <div class="copy">
+        <div class="eyebrow">MEET CAROLINA</div>
+        <h2>Personal care makes the difference.</h2>
+        <p>Every session begins by listening. Carolina adapts the massage to how you feel, the areas that need attention and the experience you are looking for — creating a calm, private and unhurried space to disconnect.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section why">
+    <div class="wrap why-grid">
+      <div>
+        <div class="eyebrow">WHY GUESTS CHOOSE CAROLINA</div>
+        <h2>Simple, personal, discreet.</h2>
+      </div>
+      <div class="why-list"><div class="why-item"><div class="why-num">01</div><div><strong>Direct communication</strong><span>You speak directly with Carolina before your session.</span></div></div><div class="why-item"><div class="why-num">02</div><div><strong>Tailored attention</strong><span>The massage adapts to how your body feels that day.</span></div></div><div class="why-item"><div class="why-num">03</div><div><strong>Privacy &amp; convenience</strong><span>Choose between a private studio or mobile service.</span></div></div><div class="why-item"><div class="why-num">04</div><div><strong>Easy booking</strong><span>Check availability and reserve directly by WhatsApp.</span></div></div></div>
+    </div>
+  </section>
+
+  <section class="section closing">
+    <div class="wrap">
+      <div class="eyebrow">YOUR TIME, YOUR BODY</div>
+      <h2>Make space for yourself.</h2>
+      <p>Tell Carolina where you are staying and what kind of massage you are looking for. She will personally help you choose the right experience.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="https://wa.me/34618526413?text=Hello%20Carolina%2C%20I%E2%80%99m%20visiting%20Lanzarote%20and%20I%20would%20like%20to%20book%20a%20massage.%20I%E2%80%99m%20staying%20in..." target="_blank">Book via WhatsApp</a>
+      </div>
+    </div>
+  </section>
 </main>
-<footer><div class="wrap footer"><div><strong>Carolina Massage Lanzarote</strong><br>Lanzarote, Canary Islands</div><div><strong>WhatsApp</strong><br>+34 618 52 64 13<br>info@carolinamassagelanzarote.com</div><div><strong>Hours</strong><br>Every day · 10:00–21:00 · By appointment only</div></div></footer>
-<a class="wa" href="https://wa.me/34618526413?text=Hello%20Carolina%2C%20I%E2%80%99m%20visiting%20Lanzarote%20and%20I%20would%20like%20to%20book%20a%20massage.%20I%E2%80%99m%20staying%20in..." target="_blank">Book · WhatsApp</a>
-</body></html>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div><strong>Carolina Massage Lanzarote</strong>Lanzarote · Canary Islands</div>
+    <div><strong>WhatsApp</strong>+34 618 52 64 13<br>info@carolinamassagelanzarote.com</div>
+    <div><strong>Hours</strong>Every day · 10:00–21:00 · By appointment only</div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/34618526413?text=Hello%20Carolina%2C%20I%E2%80%99m%20visiting%20Lanzarote%20and%20I%20would%20like%20to%20book%20a%20massage.%20I%E2%80%99m%20staying%20in..." target="_blank">Book via WhatsApp</a>
+
+</body>
+</html>
