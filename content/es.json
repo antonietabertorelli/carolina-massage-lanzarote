@@ -1,0 +1,94 @@
+{
+  "seo": {
+    "title": "Masaje privado en Lanzarote | Carolina Massage Lanzarote",
+    "description": "Experiencias de masaje privado en Lanzarote: piedras volcánicas, masaje relajante y terapéutico, con servicio a hoteles, villas y apartamentos turísticos."
+  },
+  "nav": {
+    "services": "Tratamientos",
+    "mobile": "Masaje a domicilio",
+    "about": "Sobre Carolina",
+    "book": "Reservar"
+  },
+  "hero": {
+    "eyebrow": "EXPERIENCIAS DE MASAJE PRIVADO · LANZAROTE",
+    "title": "Baja el ritmo. Libera tensión. Vive Lanzarote de otra manera.",
+    "body": "Masajes personalizados según cómo te sientes, en un espacio privado o directamente en tu hotel, villa o apartamento turístico.",
+    "primaryCta": "Consultar disponibilidad",
+    "secondaryCta": "Ver tratamientos"
+  },
+  "trust": [
+    "Sesiones privadas y personalizadas",
+    "Hoteles, villas y apartamentos",
+    "Atención en inglés y español",
+    "Todos los días · 10:00–21:00 · Con cita previa"
+  ],
+  "intro": {
+    "eyebrow": "TU TIEMPO, TU CUERPO",
+    "title": "Tus vacaciones también pueden ser una pausa.",
+    "body": "Después de viajar, recorrer la isla o simplemente cambiar de ritmo, el cuerpo puede pedirte parar. Cada sesión se adapta a cómo te sientes ese día, con una atención cuidada y sin prisas."
+  },
+  "signature": {
+    "eyebrow": "EXPERIENCIA DESTACADA",
+    "title": "Masaje con Piedras Volcánicas Calientes",
+    "duration": "75 minutos",
+    "body": "Un masaje manual personalizado combinado con el calor de piedras volcánicas para favorecer una relajación profunda y liberar la tensión cotidiana. La experiencia termina con un suave masaje facial y craneal.",
+    "cta": "Consultar esta experiencia"
+  },
+  "servicesHeading": {
+    "eyebrow": "TRATAMIENTOS",
+    "title": "Elige lo que tu cuerpo necesita hoy.",
+    "body": "¿No sabes qué masaje elegir? Cuéntale a Carolina cómo te sientes y te ayudará a decidir."
+  },
+  "services": [
+    {
+      "name": "Masaje Relajante",
+      "duration": "60 minutos",
+      "description": "Un masaje lento y calmado pensado para soltar la tensión del día a día y ayudarte a desconectar."
+    },
+    {
+      "name": "Masaje Terapéutico",
+      "duration": "Según consulta",
+      "description": "Una sesión más focalizada, adaptada a las zonas donde sientes mayor tensión o molestia."
+    },
+    {
+      "name": "Masaje de Cuello y Hombros",
+      "duration": "Según consulta",
+      "description": "Atención específica para una de las zonas donde más se acumulan el viaje, el estrés y la tensión cotidiana."
+    },
+    {
+      "name": "Masaje de Espalda",
+      "duration": "Según consulta",
+      "description": "Trabajo focalizado para dejar la espalda con una sensación de mayor ligereza, comodidad y cuidado."
+    }
+  ],
+  "mobile": {
+    "eyebrow": "MASAJE A DOMICILIO",
+    "title": "Tu masaje. Tu espacio.",
+    "body": "¿Te alojas en un hotel, una villa privada o un apartamento turístico? Carolina puede llevar la experiencia directamente hasta ti para que puedas relajarte sin interrumpir tu día.",
+    "note": "Disponible en zonas seleccionadas de Lanzarote. La ubicación y disponibilidad se confirman antes de reservar.",
+    "cta": "Consultar masaje a domicilio"
+  },
+  "about": {
+    "eyebrow": "CONOCE A CAROLINA",
+    "title": "La atención personal marca la diferencia.",
+    "body": "Cada masaje empieza escuchando. Carolina adapta cada sesión a cómo te sientes, las zonas que necesitan atención y la experiencia que buscas, creando un espacio tranquilo, privado y personal durante tu estancia en Lanzarote.",
+    "note": "Aquí añadiremos su experiencia profesional y formación cuando estén confirmadas."
+  },
+  "reviews": {
+    "eyebrow": "EXPERIENCIAS DE CLIENTES",
+    "title": "La confianza también forma parte de la experiencia.",
+    "body": "Aquí mostraremos reseñas verificadas de Google a medida que estén disponibles.",
+    "cta": "Ver perfil de Google"
+  },
+  "finalCta": {
+    "eyebrow": "HAZTE UN ESPACIO",
+    "title": "Cuéntale a Carolina dónde te alojas y qué necesitas.",
+    "body": "Ella confirmará personalmente la disponibilidad y te ayudará a elegir la experiencia adecuada. Hay citas todos los días de 10:00 a 21:00 con reserva previa.",
+    "button": "Reservar por WhatsApp",
+    "message": "Hola Carolina, estoy en Lanzarote y me gustaría reservar un masaje. Me alojo en… Mi fecha y hora preferidas son…"
+  },
+  "footer": {
+    "tagline": "Experiencias de masaje privado en Lanzarote.",
+    "legal": "Disponible todos los días de 10:00 a 21:00 con cita previa. Las zonas de servicio a domicilio se confirman antes de reservar."
+  }
+}

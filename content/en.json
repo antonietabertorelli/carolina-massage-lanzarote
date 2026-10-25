@@ -1,0 +1,94 @@
+{
+  "seo": {
+    "title": "Private Massage in Lanzarote | Carolina Massage Lanzarote",
+    "description": "Private massage experiences in Lanzarote, including volcanic hot stone, relaxing and therapeutic massage, with mobile service for hotels, villas and holiday apartments."
+  },
+  "nav": {
+    "services": "Treatments",
+    "mobile": "Mobile Massage",
+    "about": "About Carolina",
+    "book": "Book"
+  },
+  "hero": {
+    "eyebrow": "PRIVATE MASSAGE EXPERIENCES · LANZAROTE",
+    "title": "Slow down. Release tension. Enjoy Lanzarote differently.",
+    "body": "Personalised massage treatments designed around how you feel, in a private setting or brought directly to your hotel, villa or holiday apartment.",
+    "primaryCta": "Check availability",
+    "secondaryCta": "Explore treatments"
+  },
+  "trust": [
+    "Private, personalised sessions",
+    "Hotels, villas & holiday apartments",
+    "English & Spanish",
+    "Daily · 10:00–21:00 · By appointment"
+  ],
+  "intro": {
+    "eyebrow": "YOUR TIME, YOUR BODY",
+    "title": "Your holiday is also a chance to stop.",
+    "body": "After travelling, exploring the island or simply moving at a different rhythm, your body may be asking for a pause. Each session is adapted to how you feel that day, with attentive, unhurried care."
+  },
+  "signature": {
+    "eyebrow": "SIGNATURE EXPERIENCE",
+    "title": "Volcanic Hot Stone Massage",
+    "duration": "75 minutes",
+    "body": "A personalised manual massage combined with the warmth of volcanic stones to encourage deep relaxation and release everyday tension. The experience finishes with a gentle facial and scalp massage.",
+    "cta": "Ask about this experience"
+  },
+  "servicesHeading": {
+    "eyebrow": "MASSAGE TREATMENTS",
+    "title": "Choose what your body needs today.",
+    "body": "Not sure which treatment is right for you? Tell Carolina how you feel and she will help you choose."
+  },
+  "services": [
+    {
+      "name": "Relaxing Massage",
+      "duration": "60 minutes",
+      "description": "A slow, calming massage created to release everyday tension and help you fully switch off."
+    },
+    {
+      "name": "Therapeutic Massage",
+      "duration": "By consultation",
+      "description": "A more focused session adapted to areas where you are carrying tension or discomfort."
+    },
+    {
+      "name": "Neck & Shoulder Massage",
+      "duration": "By consultation",
+      "description": "Targeted attention for one of the areas where travel, stress and daily tension often accumulate."
+    },
+    {
+      "name": "Back Massage",
+      "duration": "By consultation",
+      "description": "Focused work designed to leave the back feeling lighter, more comfortable and cared for."
+    }
+  ],
+  "mobile": {
+    "eyebrow": "MOBILE MASSAGE",
+    "title": "Your massage. Your space.",
+    "body": "Staying in a hotel, private villa or holiday apartment? Carolina can bring the massage experience directly to you, so you can relax without interrupting your day.",
+    "note": "Available in selected areas of Lanzarote. Location and availability are confirmed before booking.",
+    "cta": "Ask about mobile massage"
+  },
+  "about": {
+    "eyebrow": "MEET CAROLINA",
+    "title": "Personal care makes the difference.",
+    "body": "Every massage begins with listening. Carolina adapts each session to how you feel, the areas that need attention and the experience you are looking for, creating a calm, private and personal space for your time in Lanzarote.",
+    "note": "Professional background and qualifications can be added here once confirmed."
+  },
+  "reviews": {
+    "eyebrow": "GUEST EXPERIENCES",
+    "title": "Trust is part of the experience.",
+    "body": "Verified Google reviews will be displayed here as they become available.",
+    "cta": "View Google profile"
+  },
+  "finalCta": {
+    "eyebrow": "MAKE TIME FOR YOURSELF",
+    "title": "Tell Carolina where you are staying and what you need.",
+    "body": "She will personally confirm availability and help you choose the right massage experience. Appointments are available daily from 10:00 to 21:00 with prior booking.",
+    "button": "Book via WhatsApp",
+    "message": "Hello Carolina, I’m visiting Lanzarote and would like to book a massage. I’m staying in… My preferred date and time are…"
+  },
+  "footer": {
+    "tagline": "Private massage experiences in Lanzarote.",
+    "legal": "Available daily from 10:00 to 21:00 by prior appointment. Mobile service areas are confirmed before booking."
+  }
+}
